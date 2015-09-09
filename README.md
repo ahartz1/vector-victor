@@ -12,6 +12,7 @@ Implements the below linear algebra functions using only built-in `+ - / *` oper
 
 ### Vectors
 * vector addition and subtraction
+* vector sum
 * vector multiplication by a scalar
 * mean of multiple vectors
 * dot product
