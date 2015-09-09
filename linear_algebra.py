@@ -60,4 +60,4 @@ def vector_mean(*vectors):
 
 
 def magnitude(vec):
-    pass
+    return math.sqrt(dot(vec, vec))
