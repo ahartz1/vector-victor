@@ -1,6 +1,6 @@
 # Vector Victor
 
-Implements the below linear algebra functions using only built-in `+ - / *` operators and the `math` module. Additionally, these are written without `for` or `while` loops (list comprehensions are used instead).
+Implements the below linear algebra functions using only built-in `+ - / *` operators and the `math` module. Additionally, these are written without traditional `for` or `while` loops (list comprehensions are used instead).
 
 ## How to Use This Program
 
