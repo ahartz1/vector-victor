@@ -2,11 +2,11 @@
 
 Implements the below linear algebra functions using only built-in `+ - / *` operators and the `math` module. Additionally, these are written without traditional `for` or `while` loops (list comprehensions are used instead).
 
-## How to Use This Program
+## How to Use These Functions
 
 * You will need to have **python&nbsp;3** installed on your machine or have access to a python&nbsp;3 interpreter. See [Python's site](https://www.python.org/) for details.
 
-* To run this program, save `linear_algebra.py` to your computer. Using a command-line program (such as Terminal on Mac&nbsp;OS&nbsp;X), navigate to the folder containing the downloaded file and run the following line to use: `python3 linear_algebra.py`
+* To use these functions in your program, save `linear_algebra.py` to your project folder. Include an import statement at the top of the files in which you intend to call the functions. (e.g., `from linear_algebra import *`.)
 
 ## Linear Algebra Functions
 
