@@ -44,9 +44,8 @@ def dot(vec1, vec2):
     return ret
 
 
-
-def vector_multiply(vec1, scalar):
-    pass
+def vector_multiply(vec, scalar):
+    return [scalar*e for e in vec]
 
 
 def vector_mean(vec):
