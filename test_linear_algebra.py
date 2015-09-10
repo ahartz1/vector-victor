@@ -180,18 +180,18 @@ def test_matrix_col():
     assert matrix_col(D, 2) == [3, 1]
 
 
-# def test_matrix_scalar_multiply():
-#     """
-#     [[a b]   *  Z   =   [[a*Z b*Z]
-#      [c d]]              [c*Z d*Z]]
-#
-#     Matrix * Scalar = Matrix
-#     """
-#     assert matrix_scalar_multiply(C, 3) == [[3, 6],
-#                                             [6, 3],
-#                                             [3, 6]]
-#
-#
+def test_matrix_scalar_multiply():
+    """
+    [[a b]   *  Z   =   [[a*Z b*Z]
+     [c d]]              [c*Z d*Z]]
+
+    Matrix * Scalar = Matrix
+    """
+    assert matrix_scalar_multiply(C, 3) == [[3, 6],
+                                            [6, 3],
+                                            [3, 6]]
+
+
 # def test_matrix_vector_multiply():
 #     """
 #     [[a b]   *  [x   =   [a*x+b*y

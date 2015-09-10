@@ -80,6 +80,11 @@ def matrix_col(vec, col):
     return ret
 
 
+def matrix_scalar_multiply(vec, scalar):
+    return [vector_multiply(vec[n],scalar) for n, _ in enumerate(vec)]
+
+
+
 
 
 
