@@ -76,13 +76,21 @@ def matrix_row(vec, row):
 
 def matrix_col(vec, col):
     ret = [vec[n][col] for n, _ in enumerate(vec)]
-    print(ret)
     return ret
 
 
 def matrix_scalar_multiply(vec, scalar):
     return [vector_multiply(vec[n],scalar) for n, _ in enumerate(vec)]
 
+
+def matrix_vector_multiply(vec, matrix):
+    if shape(vec[0]) != shape(matrix):
+        raise ShapeException('Shape rule: the vectors must be the same size.')
+    else:
+        intermediate1 = [[row[i] for row in vec] for i in range(len(vec[0]))]
+        intermediate2 = [vector_multiply(intermediate1[n], matrix[n]) for n in range(len(matrix))]
+        ret = vector_sum(*intermediate2)
+        return ret
 
 
 
