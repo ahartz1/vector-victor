@@ -5,7 +5,15 @@ import math
 
 
 def shape(vec):
-    return (len(vec),)
+    try:
+        len(vec[0]) > 1
+        shape_expectation = (len(vec[0]),)
+        equal_vectors = [shape(r) for r in vec if shape_expectation == shape(r)]
+        if len(equal_vectors) != len(vec):
+            raise ShapeException('Shape rule: the vectors must be the same size.')
+        return (len(vec), len(vec[0]))
+    except:
+        return (len(vec),)
 
 
 def vector_add(vec1, vec2):
@@ -38,7 +46,6 @@ def dot(vec1, vec2):
     if shape(vec1)[0] == shape(vec2)[0]:
         ret = [vec1[n] * vec2[n] for n in range(shape(vec1)[0])]
         ret = sum(ret)
-        print(ret)
     else:
         raise ShapeException('Shape rule: the vectors must be the same size.')
     return ret
@@ -61,3 +68,35 @@ def vector_mean(*vectors):
 
 def magnitude(vec):
     return math.sqrt(dot(vec, vec))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def bottom_of_file():
+    pass
