@@ -70,7 +70,8 @@ def magnitude(vec):
     return math.sqrt(dot(vec, vec))
 
 
-
+def matrix_row(vec, row):
+    return vec[row]
 
 
 
