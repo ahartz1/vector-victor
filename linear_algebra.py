@@ -74,7 +74,10 @@ def matrix_row(vec, row):
     return vec[row]
 
 
-
+def matrix_col(vec, col):
+    ret = [vec[n][col] for n, _ in enumerate(vec)]
+    print(ret)
+    return ret
 
 
 
